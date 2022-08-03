@@ -718,3 +718,11 @@ img {
 .close-icon {
 	fill: currentColor;
 }
+
+
+
+.experiment {
+	display: block;
+	margin: 75px;
+}
+

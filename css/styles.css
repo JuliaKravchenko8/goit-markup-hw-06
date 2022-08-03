@@ -616,7 +616,7 @@ img {
 
 .card-thumb::before {
 	position: absolute;
-	top: 0;
+	top: 0; 
 	left: 0;
 	content: "";
 	opacity: 0;
@@ -672,10 +672,11 @@ img {
 
 	opacity: 1;
 	background-color: rgba(0, 0, 0, 0.2);
-	transition: opacity 250ms var(--timing-function), transform 250ms var(--timing-function);
+	transition: opacity 250ms var(--timing-function), transform 250ms var(--timing-function), visibility 250ms var(--timing-function);
 }
 
 .backdrop.is-hidden {
+	visibility: hidden;
 	opacity: 0;
 	pointer-events: none;
 }
@@ -683,6 +684,7 @@ img {
 .backdrop.is-hidden .modal {
 	transform: translate(-50%, -50%) scale(0.5);
 }
+
 .modal {
 	position: absolute;
 	top: 50%;
@@ -716,7 +718,3 @@ img {
 .close-icon {
 	fill: currentColor;
 }
-
-кравченко юлія іванівна
-Кравченко Дмитро Євгенович
-Кравченко Максим Євгенович

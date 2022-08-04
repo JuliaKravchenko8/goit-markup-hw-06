@@ -448,7 +448,38 @@
     
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <p></p>
+        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+
+        <!-- --form-- -->
+        <form class="form">
+          <div class="form-field">
+            <label class="form-label" for="name">Ім'я</label>
+            <input class="form-input" type="text" name="name" id="name" autofocus autocomplete="off">
+        
+            <label class="form-label" for="tel">Телефон</label>
+            <input class="form-input" type="tel" name="tel" id="tel" autocomplete="off">
+        
+            <label class="form-label" for="mail">Пошта</label>
+            <input class="form-input" type="email" name="mail" id="mail" autocomplete="off">  
+          </div>
+            
+          <div class="form-field">
+            <label class="form-label" for="comment">Коментар</label>
+            <textarea class="comment-date" name="comment" id="comment" rows="8" placeholder="Введіть текст"></textarea>
+          </div>
+      
+          <div class="form-field checkbox">
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label class="form-policy" for="checkbox">Погоджуюся з розсилкою та приймаю
+              <a href="">Умови договору</a>
+            </label>  
+          </div>
+          
+          <button class="form-button" type="submit">Відправити</button>
+        </form>  
+
+      <!-- --form-- -->
+
         <button class="button-close" data-modal-close>
           <svg class="close-icon" width="11" height="11">
             <use href="./images/icons.svg#icon-close"></use>
@@ -459,31 +490,3 @@
     <script src="./js/modal.js"></script>
   </body>
 </html>
-
-
-<div class="experiment">
-  <form class=""></form>
-    <label for="user-name">Ім"я</label>
-    <input type="text" name="name" id="user-name">
-
-    <label for="tel">Телефон</label>
-    <input type="tel" name="tel" id="tel">
-
-    <label for="mail">Пошта</label>
-    <input type="mail" name="mail" id="mail">
-
-    <input type="checkbox" name="topic" value="html" id="html">
-    <label for="html">HTML</label>
-
-    <input type="checkbox" name="topic" value="css" id="css">
-    <label for="css">css</label>
-
-    <input type="checkbox" name="topic" value="js" id="js">
-    <label for="js">js</label>
-
-
-    <button type="submit">Відправити заявку</button>
-
-
-</div>
-

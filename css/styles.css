@@ -777,9 +777,7 @@ img {
 	position: relative;
 	transition: color 250ms var(--timing-function);
 }
-.form-field-wrapper:focus-within {
-	color: green;
-}
+
 .form-field-wrapper:hover,
 .form-field-wrapper:focus {
 	color: var(--link-color);

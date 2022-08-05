@@ -744,6 +744,7 @@ img {
 }
 
 .form-label {
+	margin-top: 10px;
 	margin-bottom: 4px;
 	font-weight: 400;
 	font-size: 12px;
@@ -753,23 +754,43 @@ img {
 }
 
 .form-input {
-	margin-bottom: 10px;
+	width: 100%;
 	height: 40px;
 	outline: none;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
-	cursor: pointer;	
+	cursor: pointer;
+	padding-left: 42px;
+	padding-top: 12px;
+	padding-bottom: 12px;	
+	transition: border-color 250ms var(--timing-function);
 }
 
 .form-input:hover,
-.comment-date:hover,
 .form-input:focus,
+.comment-date:hover,
 .comment-date:focus {
 	border-color: var(--link-color);
-	color: var(--link-color)
 }
 
-
+.form-field-wrapper {
+	position: relative;
+	transition: color 250ms var(--timing-function);
+}
+.form-field-wrapper:focus-within {
+	color: green;
+}
+.form-field-wrapper:hover,
+.form-field-wrapper:focus {
+	color: var(--link-color);
+}
+.icon {
+	position: absolute;
+	top: 50%;
+	left: 15px;
+	transform: translateY(-50%);
+	fill: currentColor;
+}
 
 .comment-date {
 	padding: 12px 16px;
@@ -782,6 +803,7 @@ img {
 	border-radius: 4px;
 	outline: none;
 	cursor: pointer;
+	transition: border-color 250ms var(--timing-function);
 }
 
 .form-policy {

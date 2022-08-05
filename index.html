@@ -453,14 +453,30 @@
         <!-- --form-- -->
         <form class="form">
           <div class="form-field">
+            <!-- --name-- -->
             <label class="form-label" for="name">Ім'я</label>
-            <input class="form-input" type="text" name="name" id="name" autofocus autocomplete="off">
-        
+            <div class="form-field-wrapper">
+              <input class="form-input" type="text" name="name" id="name" autocomplete="off">
+              <svg class="icon" width="12" height="12">
+                <use href="./images/icons.svg#name"></use>
+              </svg>  
+            </div>
+            <!-- --tel-- -->
             <label class="form-label" for="tel">Телефон</label>
-            <input class="form-input" type="tel" name="tel" id="tel" autocomplete="off">
-        
+            <div class="form-field-wrapper">
+              <input class="form-input" type="tel" name="tel" id="tel" autocomplete="off">
+              <svg class="icon" width="13" height="13">
+                <use href="./images/icons.svg#tel"></use>
+              </svg>
+            </div>
+            <!-- --mail-- -->
             <label class="form-label" for="mail">Пошта</label>
-            <input class="form-input" type="email" name="mail" id="mail" autocomplete="off">  
+            <div class="form-field-wrapper">
+              <input class="form-input" type="email" name="mail" id="mail" autocomplete="off">
+              <svg class="icon" width="15" height="12">
+                <use href="./images/icons.svg#mail"></use>
+              </svg>  
+            </div>
           </div>
             
           <div class="form-field">

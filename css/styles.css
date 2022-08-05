@@ -714,8 +714,15 @@ img {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 50%;
 	color: #000000;
+	cursor: pointer;
+
+	transition: color 250ms var(--timing-function);
 }
 
+.button-close:hover,
+.button-close:focus	{
+	color: var(--link-color);
+}
 .close-icon {
 	fill: currentColor;
 }
@@ -754,6 +761,8 @@ img {
 	cursor: pointer;	
 }
 
+.form-input:hover,
+.comment-date:hover,
 .form-input:focus,
 .comment-date:focus {
 	border-color: var(--link-color);

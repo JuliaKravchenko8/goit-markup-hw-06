@@ -925,10 +925,11 @@ img {
     line-height: 1.71;
     letter-spacing: 0.03em;
     cursor: pointer;
+
 }
 
 .checkbox {
-	/* appearance: none; */
+	appearance: none;
 	position: absolute;
     width: 1px;
     height: 1px;
@@ -946,6 +947,7 @@ img {
 	opacity: 0;
 	left: 0;
 	top: 50%;
+	border-radius: 2px;
 	transform: translateY(-50%);
 	transition: opacity 250ms var(--timing-function);
 }
@@ -955,6 +957,8 @@ img {
 	opacity: 1;
 	left: 0;
     top: 50%;
+	border-radius: 2px;
+
     transform: translateY(-50%);
     transition: opacity 250ms var(--timing-function);
 }

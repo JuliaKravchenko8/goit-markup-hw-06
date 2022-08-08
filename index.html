@@ -492,25 +492,25 @@
             
           <div class="form-field comment-container">
             <label class="form-label" for="comment">Коментар</label>
-            <textarea class="comment-date" name="comment" id="comment" rows="8" placeholder="Введіть текст"></textarea>
+            <textarea class="textarea" name="comment" id="comment" rows="8" placeholder="Введіть текст"></textarea>
           </div>
       
-          <label class="label-checkbox">
-            <input class="checkbox" type="checkbox" name="checkbox">
-            <div class="checkbox-icon-div">
-            <svg class="checkbox-icon1" width="16" height="15">
-              <use href="./images/icons.svg#vector"></use>
-            </svg>
-            <svg class="checkbox-icon2" width="16" height="15">
-              <use href="./images/icons.svg#icon-check"></use>
-            </svg>
-            </div>
-            <span class="form-policy">Погоджуюся з розсилкою та приймаю
-            <a class="checkbox-link" href="">Умови договору</a></span>
-          </label>
-
+          <div class="form-checkbox">
+            <label class="checkbox-icon-label">
+              <input class="checkbox" type="checkbox" name="checkbox">
+              <svg class="icon-check" width="16" height="15">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+              <svg class="icon-no-check" width="16" height="15">
+                <use href="./images/icons.svg#vector"></use>
+              </svg>
+              Погоджуюся з розсилкою та приймаю
+              <a class="checkbox-link" href="">Умови договору</a>
+            </label>
+          </div>
           <button class="form-button" type="submit">Відправити</button>
         </form>  
+
 
       <!-- form -->
 

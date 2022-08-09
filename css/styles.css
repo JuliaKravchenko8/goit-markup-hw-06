@@ -976,15 +976,7 @@ img {
 	position: relative;
 	color: var(--link-color);
 }
-.checkbox-link::before {
-	position: absolute;
-	content: '';
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 1px;
-	background-color: var(--button-link-primary);
-  }
+
 .form-button {
 	display: flex;
 	align-items: center;
